@@ -86,9 +86,6 @@ def _extractPayload(mutableBytecodeStack, explodeAfter, logger):
         payloadBytes.append(byte)
         
     print("Extracted payload bytes: {}".format(payloadBytes))
-    payload = str(payloadBytes, "utf8")
-
-    print("Extracted payload: {}".format(payload))
 
 
 def _getCarrierFile(args, logger):
