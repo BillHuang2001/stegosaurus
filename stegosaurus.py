@@ -84,7 +84,8 @@ def _extractPayload(mutableBytecodeStack, explodeAfter, logger):
         if byte == 0:
             break
         payloadBytes.append(byte)
-
+        
+    print("Extracted payload bytes: {}".format(payloadBytes))
     payload = str(payloadBytes, "utf8")
 
     print("Extracted payload: {}".format(payload))
