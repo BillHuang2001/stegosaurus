@@ -120,7 +120,7 @@ def _initLogger(args):
 def _loadBytecode(carrier, logger):
     try:
         f = open(carrier, "rb")
-        header = f.read(12)
+        header = f.read(16)
         code = marshal.load(f)
         logger.debug("Read header and bytecode from carrier")
     finally:
